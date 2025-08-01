@@ -54,7 +54,7 @@ const Banner = () => {
             </div>
 
             {/* Social Badge */}
-            <div className="absolute bottom-24 right-24 lg:bottom-24 lg:right-24 z-20">
+            <div className="absolute bottom-8 right-8 sm:bottom-12 sm:right-12 z-20">
                 <Link
                     href="https://www.instagram.com/sumdimsum/"
                     target="_blank"
@@ -65,7 +65,7 @@ const Banner = () => {
                         alt="Follow us on Instagram"
                         width={100}
                         height={100}
-                        className="w-36 h-36 object-contain transition-transform duration-300  "
+                        className="w-24 h-24 sm:w-32 sm:h-32 object-contain  "
                     />
                 </Link>
             </div>

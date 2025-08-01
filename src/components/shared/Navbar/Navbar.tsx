@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="mx-auto container absolute top-6 left-1 right-0 z-50 px-6 py-6 lg:px-12">
+        <header className="mx-auto container absolute top-8 left-1 right-0 z-50 px-6 py-6 lg:px-12">
             <nav className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center">
