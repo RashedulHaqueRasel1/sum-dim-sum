@@ -1,7 +1,8 @@
-import { ArrowRight } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Cinzel_Decorative, Raleway } from 'next/font/google';
+import Button from "@/components/ui/button";
 
 const cinzel = Cinzel_Decorative({
     weight: ['400', '700'],
@@ -47,10 +48,9 @@ const Banner = () => {
                 </p>
 
                 {/* CTA Button */}
-                <button className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-lg inline-flex items-center gap-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl">
-                    Explore Our Menu
-                    <ArrowRight className="w-5 h-5" />
-                </button>
+                <Button label="Explore Our Menu" />
+
+
             </div>
 
             {/* Social Badge */}
