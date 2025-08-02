@@ -39,7 +39,7 @@ export default function RootLayout({
         {children}
 
         {/* This is the footer section */}
-        {/* <Footer /> */}
+        <Footer />
 
       </body>
     </html>

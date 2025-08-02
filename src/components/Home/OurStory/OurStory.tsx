@@ -23,15 +23,15 @@ const OurStory = () => {
                     <div className="absolute left-0 top-20 w-[1096px] h-[389px] hidden lg:flex">
                         <Image
                             src="/Rectangle-400.png"
-                            alt="Cherry Blossom Background"
+                            alt="Rectangle-400 Background"
                             fill
                             className="object-contain rounded-md"
                         />
                     </div>
-                    <div className="absolute left-92 top-40 w-[474px] h-[286px] hidden lg:flex">
+                    <div className="absolute left-92 top-40 w-[474px] h-[286px] hidden lg:hidden xl:flex ">
                         <Image
                             src="/ourStory-background.png"
-                            alt="Cherry Blossom Overlay"
+                            alt="ourStory background"
                             fill
                             className="object-contain"
                         />

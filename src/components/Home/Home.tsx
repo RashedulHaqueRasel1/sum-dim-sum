@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import Contact from "./Contact/Contact";
 import IntroBanner from "./IntroBanner/IntroBanner";
 import OurStory from "./OurStory/OurStory";
 import Reservation from "./Reservation/Reservation";
@@ -16,6 +17,7 @@ const Home = () => {
             <IntroBanner />
             <Testimonial />
             <Reservation />
+            <Contact />
         </div>
     );
 };
