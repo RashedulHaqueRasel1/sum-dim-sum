@@ -60,7 +60,7 @@ const OurStory = () => {
                     {/* Side Image with Border */}
                     <div className="flex-1 w-full max-w-md relative mt-20 lg:mt-32">
                         <div className="relative">
-                            <div className="absolute -top-6 -right-7 w-full h-full border-2 border-red-400 rounded-xl z-0" />
+                            <div className="absolute -top-6 -right-7 w-full h-full border-2 border-red-400 rounded-xl z-0 hidden lg:flex" />
                             <Image
                                 src="/ourStory-rideSide.jpg"
                                 alt="Dim Sum Table"

@@ -3,7 +3,7 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
-import { Quote, ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft } from "lucide-react";
 import Title from "@/components/ui/title";
 import { useState } from "react";
 
@@ -74,7 +74,7 @@ const Testimonial = () => {
                                     alt={item.name}
                                     width={56}
                                     height={56}
-                                    className="object-cover w-24 h-24 absolute top-4 left-1 text-white/60 scale-x-[-1]"
+                                    className="  w-24 h-24 absolute top-4 left-1 text-white/60 scale-x-[-1]"
                                 />
 
                                 {/* Left arrow */}
