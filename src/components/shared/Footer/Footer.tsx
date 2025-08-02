@@ -45,8 +45,8 @@ const Footer = () => {
                     <Image
                         src="/Footer-Logo.png"
                         alt="Sum Dim Sum Logo"
-                        width={170}
-                        height={40}
+                        width={296}
+                        height={100}
                         className="object-contain"
                     />
                     <div className="flex items-center gap-6 mt-4 text-black">

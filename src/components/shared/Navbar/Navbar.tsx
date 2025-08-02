@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="mx-auto container absolute top-8 left-1 right-0 z-50 px-6 py-6 lg:px-12">
+        <header className="mx-auto container absolute top-8  left-1 right-0 z-50 px-6 py-6 lg:px-12">
             <nav className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
                             alt="Sum Dim Sum Logo"
                             width={120}
                             height={60}
-                            className="h-12 w-auto  "
+                            className="h-12 w-auto hidden lg:flex "
                         />
                     </Link>
                 </div>

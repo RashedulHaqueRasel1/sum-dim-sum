@@ -117,7 +117,7 @@ const Testimonial = () => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 24 24"
                                             fill="currentColor"
-                                            className="w-5 h-5"
+                                            className="w-7 h-7"
                                         >
                                             <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.783 1.401 8.173L12 18.896l-7.335 3.854 1.401-8.173L.132 9.211l8.2-1.193z" />
                                         </svg>
