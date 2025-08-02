@@ -57,7 +57,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Book a Table Button */}
-                <button className="hidden lg:block bg-transparent border border-white text-white px-6 py-2.5 rounded hover:bg-white hover:text-black transition-all duration-300 font-medium text-sm tracking-wide">
+                <button className="hidden lg:block bg-[#FFFFFF1F]/80 border border-[#99999900] text-white px-6 py-2.5 rounded  ">
                     Book a Table
                 </button>
 

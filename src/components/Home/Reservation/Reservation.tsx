@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ChangeEvent, FormEvent, useState } from "react";
 import axios from "axios";
 import { Cinzel_Decorative, Raleway } from "next/font/google";
+import toast, { Toaster } from 'react-hot-toast';
 
 // Google fonts
 const raleway = Raleway({
@@ -73,7 +74,7 @@ const Reservation = () => {
       );
 
       if (res.status === 200 || res.status === 201) {
-        alert("Reservation Successful!");
+        toast.success("Reservation Successful!");
         setFormData({
           name: "",
           numberOfGuests: "1",
@@ -81,7 +82,7 @@ const Reservation = () => {
           reservationTime: "",
         });
       } else {
-        alert("Failed to reserve. Please try again.");
+        toast.error("Failed to reserve. Please try again.");
       }
 
     } catch (err: unknown) {
@@ -178,6 +179,8 @@ const Reservation = () => {
               </button>
             </div>
           </form>
+
+          <Toaster />
         </div>
       </div>
     </section>

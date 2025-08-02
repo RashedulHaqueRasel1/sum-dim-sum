@@ -19,30 +19,28 @@ const raleway = Raleway({
     subsets: ["latin"],
 });
 
-
 const testimonials = [
     {
         name: "Rosario Roca",
         quote:
-            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you're greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.",
+            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture...",
         image: "/testimonial-1.jpg",
     },
     {
         name: "Rosario Roca",
         quote:
-            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you're greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.",
+            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture...",
         image: "/testimonial-1.jpg",
     },
     {
         name: "Rosario Roca",
         quote:
-            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you're greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.",
+            "Sum Dim Sum is more than just a restaurant—it's an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture...",
         image: "/testimonial-1.jpg",
     },
 ];
 
 const Testimonial = () => {
-
     const [currentSlide, setCurrentSlide] = useState(0);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         loop: true,
@@ -61,8 +59,8 @@ const Testimonial = () => {
                 className="relative bg-cover bg-center py-16 px-4 sm:px-8 lg:px-20 text-white mt-6"
                 style={{ backgroundImage: "url('/testimonial-bg.png')" }}
             >
-                <div className="  text-center relative z-10">
-                    <div ref={sliderRef} className="keen-slider ">
+                <div className="text-center relative z-10">
+                    <div ref={sliderRef} className="keen-slider">
                         {testimonials.map((item, idx) => (
                             <div
                                 key={idx}
@@ -74,7 +72,7 @@ const Testimonial = () => {
                                     alt={item.name}
                                     width={56}
                                     height={56}
-                                    className="  w-24 h-24 absolute top-4 left-1 text-white/60 scale-x-[-1]"
+                                    className="w-16 h-16 sm:w-24 sm:h-24 absolute top-2 sm:top-4 left-2 sm:left-6 text-white/60 scale-x-[-1]"
                                 />
 
                                 {/* Left arrow */}
@@ -94,7 +92,7 @@ const Testimonial = () => {
                                 </button>
 
                                 {/* Profile picture */}
-                                <div className="w-20 h-20 rounded-full overflow-hidden  shadow-lg mb-10">
+                                <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg mb-10">
                                     <Image
                                         src={item.image}
                                         alt={item.name}
@@ -105,7 +103,9 @@ const Testimonial = () => {
                                 </div>
 
                                 {/* Testimonial text */}
-                                <p className={`${raleway.className} text-sm sm:text-base text-[#E6F6FC]/80  leading-relaxed font-normal w-[994px] `}>
+                                <p
+                                    className={`${raleway.className} text-sm sm:text-base md:text-lg text-[#E6F6FC]/80 leading-relaxed font-normal max-w-[994px] w-full`}
+                                >
                                     {item.quote}
                                 </p>
 
@@ -117,7 +117,7 @@ const Testimonial = () => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 24 24"
                                             fill="currentColor"
-                                            className="w-7 h-7"
+                                            className="w-6 h-6 sm:w-7 sm:h-7"
                                         >
                                             <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.783 1.401 8.173L12 18.896l-7.335 3.854 1.401-8.173L.132 9.211l8.2-1.193z" />
                                         </svg>
@@ -131,17 +131,18 @@ const Testimonial = () => {
                                             key={i}
                                             onClick={() => instanceRef.current?.moveToIdx(i)}
                                             className={`w-3 h-3 transform rotate-45 border-2 ${currentSlide === i
-                                                    ? "bg-white border-white"
-                                                    : "bg-transparent border-white/50"
+                                                ? "bg-white border-white"
+                                                : "bg-transparent border-white/50"
                                                 }`}
                                         ></button>
                                     ))}
                                 </div>
 
-
                                 {/* Stylish name shifted to right */}
-                                <div className="w-full flex justify-end pr-8">
-                                    <p className={`${Passions.className} mt-6 italic text-7xl text-[#F8F8FF66]/80 font-signature`}>
+                                <div className="w-full flex justify-end pr-4 sm:pr-8">
+                                    <p
+                                        className={`${Passions.className} mt-6 italic text-4xl sm:text-6xl lg:text-7xl text-[#F8F8FF66]/80 font-signature`}
+                                    >
                                         —{item.name}
                                     </p>
                                 </div>
