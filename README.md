@@ -57,4 +57,7 @@ npm install
 
 npm run dev
 
-# Now open http://localhost:3000 in your browser to see the app.
+- **Now open http://localhost:3000 in your browser to see the app.**
+
+ Documentation:  
+🔗 [Docs](https://docs.google.com/document/d/17y265kasfb6hP74C6l-uoHghYx4uInauQq2ZqnbFORo/edit?tab=t.0)
