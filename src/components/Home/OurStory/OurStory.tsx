@@ -20,7 +20,7 @@ const OurStory = () => {
             <div className="relative z-10 max-w-7xl mx-auto">
                 {/* Layered Background Images */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                    <div className="absolute left-0 top-20 w-[1096px] h-[389px]">
+                    <div className="absolute left-0 top-20 w-[1096px] h-[389px] hidden lg:flex">
                         <Image
                             src="/Rectangle-400.png"
                             alt="Cherry Blossom Background"
@@ -28,7 +28,7 @@ const OurStory = () => {
                             className="object-contain rounded-md"
                         />
                     </div>
-                    <div className="absolute left-92 top-40 w-[474px] h-[286px]">
+                    <div className="absolute left-92 top-40 w-[474px] h-[286px] hidden lg:flex">
                         <Image
                             src="/ourStory-background.png"
                             alt="Cherry Blossom Overlay"
