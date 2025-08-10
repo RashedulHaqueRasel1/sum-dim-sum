@@ -51,7 +51,7 @@ cd sum-dim-sum
 
 3. Install the dependencies:
 
-npm install
+npm install i
 
 4. Run the development server:
 
